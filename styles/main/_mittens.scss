@@ -1,0 +1,37 @@
+.mittens {
+	.mitten {
+		$size: 30px;
+		width: $size;
+		height: $size;
+		bottom:-3px;
+
+		&,	
+		&:after {
+			position: absolute;
+			border-radius: 50%;
+		}
+
+		&:after {
+			$size: 12px;
+			content: '';
+			width: $size;
+			height: $size;
+			box-shadow: 0 0 1px rgba(0,0,0,0.8);
+			position: absolute;
+			top:10%;
+		}
+
+		&:nth-child(1) {
+			left:-5px;
+			&:after {
+				right: 0;
+			}
+		}
+		&:nth-child(2) {
+			right: -5px;
+			&:after {
+				left: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.eyes {
+	text-align: center;
+	.inner-wrap {
+		position: relative;
+		display: inline-block;
+		white-space: nowrap;
+
+		.eye {
+			width: 45px;
+			height: 55px;
+			border-radius: 80%;
+			background: $eyes;
+			display: inline-block;
+			box-shadow: 0 0 1px rgba(0,0,0,0.3);
+
+			&:nth-child(1) {
+				transform:rotate(40deg);
+			}
+			&:nth-child(2) {
+				transform:rotate(-40deg);
+			}
+		}
+
+		// Pupils
+		&:after,
+		&:before {
+			$size: 6px;
+			content: '';
+			position: absolute;
+			width: $size;
+			height: $size;
+			border-radius: 50%;
+			background: $pupil;
+			z-index: 100;
+			top:42%;
+		}
+		&:before {
+			left: 38%;
+		}
+		&:after {
+			left: 88%;
+		}
+	}
+
+}

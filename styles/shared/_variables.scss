@@ -1,0 +1,39 @@
+// Responsive Dimensions
+$break_xs: 480px;
+$break_sm: 768px;
+$break_md: 992px;
+$break_lg: 1281px;
+
+// Colours
+$skin : #f3d8ad;
+$eyes : #fff;
+$pupil : #000;
+
+
+$primary: #008bce;
+$secondary: #0075ad;
+
+$grey_base: #000;
+$dark_grey: #333333;
+$mid_grey: #747368;
+$light_grey: #f1f1f1;
+
+$primary_contrast: #fff;
+$secondary_contrast: #fff;
+$dark_grey_contrast: #fff;
+$mid_grey_contrast: #fff;
+$light_grey_contrast: $dark_grey;
+
+$primary_dark: darken( $primary, 10% );
+$secondary_dark: darken( $secondary, 10% );
+
+$primary_light: lighten( $primary, 10% );
+$secondary_light: lighten( $secondary, 10% );
+
+// Corners
+$border_radius_sm: 3px;
+$border_radius_lg: 6px;
+
+// Spacing
+$gap_lg: 30px;
+$gap_sm: 15px;

@@ -1,0 +1,55 @@
+// 
+// Background Colour Mixins
+//
+@mixin primary() { 
+	background-color: $primary;
+	color: $primary_contrast;
+}
+@mixin primary_dark() { 
+	background-color: $primary_dark;
+	color: $primary_contrast;
+}
+@mixin primary_light() { 
+	background-color: $primary_light;
+	color: $primary_contrast;
+}
+
+@mixin secondary() { 
+	background-color: $secondary;
+	color: $secondary_contrast;
+}
+@mixin secondary_dark() { 
+	background-color: $secondary_dark;
+	color: $secondary_contrast;
+}
+@mixin secondary_light() { 
+	background-color: $secondary_light;
+	color: $secondary_contrast;
+}
+
+@mixin dark_grey() { 
+	background-color: $dark_grey;
+	color: $dark_grey_contrast;
+}
+@mixin mid_grey() { 
+	background-color: $mid_grey;
+	color: $mid_grey_contrast;
+}
+@mixin light_grey() { 
+	background-color: $light_grey;
+	color: $light_grey_contrast;
+}
+
+//
+// Helper Mixins
+//
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
